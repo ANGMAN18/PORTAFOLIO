@@ -7,8 +7,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="HTML5 website template">
   <meta name="keywords" content="global, template, html, sass, jquery">
-  <meta name="author" content="Bucky Maler">
+  <meta name="author" content="Angel Manrique">
   <link rel="stylesheet" href="assets/css/main.css">
+   <script>
+    function sendData () {
+      // (A) GET FORM DATA
+      var data = new FormData(document.getElementById("demo"));
+      // data.append("KEY", "VALUE");
+
+      // (B) INIT FETCH POST
+      fetch("2-dummy.php", {
+        method: "POST",
+        body: data
+      })
+
+      // (C) RETURN SERVER RESPONSE AS TEXT
+      .then(res => {
+        if (res.status != 200) { throw new Error("Bad Server Response"); }
+        return res.text();
+      })
+
+      // (D) SERVER RESPONSE
+      .then(res => console.log(res))
+
+      // (E) HANDLE ERRORS - OPTIONAL
+      .catch(err => console.error(err));
+
+      // (F) PREVENT FORM SUBMIT
+      return false;
+    }
+    </script>
 </head>
 <body>
 
@@ -16,9 +44,9 @@
 <div class="device-notification">
   <a class="device-notification--logo" href="#0">
     <img src="assets/img/logo.png" alt="Global">
-    <p>Global</p>
+    <p>Portafolio</p>
   </a>
-  <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+  <p class="device-notification--message">Bienvenido a mi contenido.</p>
 </div>
 
 <div class="perspective effect-rotate-left">
@@ -28,7 +56,7 @@
         <header class="header">
           <a class="header--logo" href="#0">
             <img src="assets/img/logo.png" alt="Global">
-            <p>Global</p>
+            <p>Portafolio</p>
           </a>
           <button class="header--cta cta">Hire Us</button>
           <div class="header--nav-toggle">
@@ -48,7 +76,7 @@
           <li class="l-section section section--is-active">
             <div class="intro">
               <div class="intro--banner">
-                <h1>Your next<br>interactive<br>experience</h1>
+                <h1>Bienvenido<br>a mi Portafolio<br>Interactivo</h1>
                 <button class="cta">Hire Us
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                   <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
@@ -161,14 +189,14 @@
               <div class="contact--lockup">
                 <div class="modal">
                   <div class="modal--information">
-                    <p>Pawia 5, 31-154 Kraków, Poland</p>
-                    <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
-                    <a href="tel:+148126287560">+48 12 628 75 60</a>
+                    <p>Madrid-Madrid</p>
+                    <a href="mailto:licangelmanrique@gmail.com">licangelmanrique@gmail.com</a>
+                    <a href="tel:+148126287560">+34 632 08 77 53</a>
                   </div>
                   <ul class="modal--options">
-                    <li><a href="#0">Bēhance</a></li>
-                    <li><a href="#0">dribbble</a></li>
-                    <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li>
+                    <li><a href="https://github.com/ANGMAN18">gitHub</a></li>
+                    <li><a href="http:\\www.linkedin.com/in/angel-manrique-629405109">LinkendIn</a></li>
+                    <li><a href="mailto:licangelmanrique@gmail.com">Contacto Email</a></li>
                   </ul>
                 </div>
               </div>
@@ -176,9 +204,9 @@
           </li>
           <li class="l-section section">
             <div class="hire">
-              <h2>You want us to do</h2>
+              <h2>Consulta</h2>
               <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
+              <form class="work-request" onsubmit="return sendData()" id="demo">
                 <div class="work-request--options">
                   <span class="options-a">
                     <input id="opt-1" type="checkbox" value="app design">
