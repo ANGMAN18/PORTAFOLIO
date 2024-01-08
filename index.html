@@ -9,35 +9,6 @@
   <meta name="keywords" content="global, template, html, sass, jquery">
   <meta name="author" content="Angel Manrique">
   <link rel="stylesheet" href="assets/css/main.css">
-  
-   <!--<script>
-    function sendData () {
-      // (A) GET FORM DATA
-      var data = new FormData(document.getElementById("demo"));
-      // data.append("KEY", "VALUE");
-
-      // (B) INIT FETCH POST
-      fetch("2-dummy.php", {
-        method: "POST",
-        body: data
-      })
-
-      // (C) RETURN SERVER RESPONSE AS TEXT
-      .then(res => {
-        if (res.status != 200) { throw new Error("Bad Server Response"); }
-        return res.text();
-      })
-
-      // (D) SERVER RESPONSE
-      .then(res => console.log(res))
-
-      // (E) HANDLE ERRORS - OPTIONAL
-      .catch(err => console.error(err));
-
-      // (F) PREVENT FORM SUBMIT
-      return false;
-    }
-    </script>-->
 </head>
 <body>
 
@@ -59,7 +30,7 @@
             <img src="assets/img/logo.png" alt="Global"> <!-- imagen2 -->
             <p>Portafolio</p>
           </a>
-          <button class="header--cta cta"> Contacto </button>
+          <button class="header--cta cta"> Consulta </button>
           <div class="header--nav-toggle">
             <span></span>
           </div>
@@ -78,7 +49,7 @@
             <div class="intro">
               <div class="intro--banner">
                 <h1>Bienvenido<br>a mi Portafolio<br>Interactivo</h1>
-                <button class="cta">Contacto
+                <button class="cta">Consulta
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                   <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
                     <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
@@ -86,9 +57,9 @@
                   </svg>
                   <span class="btn-background"></span>
                 </button>
-                <img src="assets/img/introduction-visual.png" alt="Welcome">         <!-- IMAGEN3 -->
+                <img src="assets/img/imagen-presentacion1.png" alt="Welcome">         <!-- IMAGEN3 -->
               </div>
-              <div class="intro--options">
+             <!-- <div class="intro--options">
                 <a href="#0">
                   <h3>Metiew &amp; Smith</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
@@ -102,7 +73,7 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
                 </a>
               </div>
-            </div>
+            </div>-->
           </li>
           <li class="l-section section">
             <div class="work">
@@ -115,7 +86,7 @@
                         <img src="assets/img/aws-symbol1.jpg" alt="AWS Service"> <!-- imagen4 -->
                       </div>
                       <p class="slider--item-title">AWS Service</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                      <p class="slider--item-description" >EC2, S3, API Gateway, DynamoDB, CloudFront, CloudWatch, CloudFormation, CloudOrganization, IAM, Lambda, SNS.<br></p>
                     </a>
                   </li>
                   <li class="slider--item slider--item-left">
@@ -124,16 +95,16 @@
                         <img src="assets/img/sql-symbol.jpg" alt="SQL"> <!-- imagen5 -->
                       </div>
                       <p class="slider--item-title">BD SQL</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                      <p class="slider--item-description">Consultas - Organización - Procesamiento de Datos.</p>
                     </a>
                   </li>
                   <li class="slider--item slider--item-center">
                     <a href="#0">
                       <div class="slider--item-image">
-                        <img src="assets/img/machine_learning1.jpg" alt="Machine Learning"> <!-- imagen6 -->
+                        <img src="assets/img/arbol-machine-learning.jpg" alt="Machine Learning"> <!-- imagen6 -->
                       </div>
                       <p class="slider--item-title">Machine &amp; Learning</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                      <p class="slider--item-description">Modelos Supervisados (Clasificación, Regresión) - Modelos No Supervisados (Clustering)</p>
                     </a>
                   </li>
                   <li class="slider--item slider--item-right">
@@ -142,7 +113,7 @@
                         <img src="assets/img/Python-Symbol.jpg" alt="Python"> <!-- imagen7 -->
                       </div>
                       <p class="slider--item-title">Python</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                      <p class="slider--item-description">Lenguaje Base - Estructurado - Orientado a Objetos.</p>
                     </a>
                   </li>
                   <li class="slider--item slider--item-right">
@@ -151,7 +122,7 @@
                         <img src="assets/img/flask-symbol.jpg" alt="Flask"> <!-- imagen7 -->
                       </div>
                       <p class="slider--item-title">Flask</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                      <p class="slider--item-description">Framework utilizado para proyectos con Python.</p>
                     </a>
                   </li>
                   <li class="slider--item slider--item-right">
@@ -160,7 +131,7 @@
                         <img src="assets/img/sqlalchemy-symbol.jpg" alt="SQLAlchemy"> <!-- imagen7 -->
                       </div>
                       <p class="slider--item-title">SQLAlchemy</p>
-                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                      <p class="slider--item-description">ORM nos permite tratar las tablas de la BD como objetos.</p>
                     </a>
                   </li>
                 </ul>
@@ -187,8 +158,8 @@
           <li class="l-section section">
             <div class="about">
               <div class="about--banner">
-                <h2><br><br>Proyectos<br></h2>
-                <a href="#0">Career
+                <h2><br><br>Proyectos</h2>
+                <!--<a href="#0">Career-->
                   <span>
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
                     <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
@@ -201,13 +172,13 @@
             </div>
               <div class="about--options">
                 <a href="#0">
-                  <h3>Winners</h3>
+                  <h3>Python</h3>
                 </a>
                 <a href="#0">
-                  <h3>Philosophy</h3>
+                  <h3>AWS Service</h3>
                 </a>
                 <a href="#0">
-                  <h3>History</h3>
+                  <h3>Machine Learning</h3>
                 </a>
               </div>
             </div>
@@ -217,9 +188,9 @@
               <div class="contact--lockup">
                 <div class="modal">
                   <div class="modal--information">
-                    <p>Madrid-Madrid</p>
+                    <p>Madrid-España</p>
                     <a href="mailto:licangelmanrique@gmail.com">licangelmanrique@gmail.com</a>
-                    <a href="tel:+148126287560">+34 632 08 77 53</a>
+                   <!-- <a href="tel:+148126287560">+34 632 08 77 53</a>-->
                   </div>
                   <ul class="modal--options">
                     <li><a href="https://github.com/ANGMAN18">gitHub</a></li>
@@ -256,86 +227,6 @@
                   <input type="submit" value="Enviar">
                 </div>
               </form> 
-              <!-- checkout formspree.io for easy form setup 
-              <form class="work-request" onsubmit="return sendData()" id="demo">
-                <div class="work-request--options">
-                  <span class="options-a">
-                    <input id="opt-1" type="checkbox" value="app design">
-                    <label for="opt-1">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      App Design
-                    </label>
-                    <input id="opt-2" type="checkbox" value="graphic design">
-                    <label for="opt-2">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Graphic Design
-                    </label>
-                    <input id="opt-3" type="checkbox" value="motion design">
-                    <label for="opt-3">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Motion Design
-                    </label>
-                  </span>
-                  <span class="options-b">
-                    <input id="opt-4" type="checkbox" value="ux design">
-                    <label for="opt-4">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      UX Design
-                    </label>
-                    <input id="opt-5" type="checkbox" value="webdesign">
-                    <label for="opt-5">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Webdesign
-                    </label>
-                    <input id="opt-6" type="checkbox" value="marketing">
-                    <label for="opt-6">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Marketing
-                    </label>
-                  </span>
-                </div>
-                <div class="work-request--information">
-                  <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
-                    <label for="name">Name</label>
-                  </div>
-                  <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
-                    <label for="email">Email</label>
-                  </div>
-                </div>
-                <input type="submit" value="Send Request">
-              </form>-->
             </div>
           </li>
         </ul>
